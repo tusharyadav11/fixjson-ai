@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+build/
+
+# environment / secrets
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel
+
+# logs & misc
+*.log
+npm-debug.log*
+.DS_Store
+*.pem
+
+# claude local settings
+.claude/settings.local.json
