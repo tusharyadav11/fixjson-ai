@@ -98,7 +98,14 @@ function calculateConfidence(result: FixResult, usedAi: boolean) {
 }
 
 export default function Home() {
-  const [input, setInput] = useState("{name: 'sample', active: true,}");
+  const [input, setInput] = useState(
+    `{
+  id: 101,
+  name: 'Acme Corp',
+  email: 'contact@acme.com',
+  active: true,
+}`
+  );
   const [result, setResult] = useState<FixResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
