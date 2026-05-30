@@ -98,7 +98,7 @@ function calculateConfidence(result: FixResult, usedAi: boolean) {
 }
 
 export default function Home() {
-  const [input, setInput] = useState("{name:'tushar',}");
+  const [input, setInput] = useState("{name: 'sample', active: true,}");
   const [result, setResult] = useState<FixResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
